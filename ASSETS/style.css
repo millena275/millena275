@@ -1,0 +1,468 @@
+/* Importação de fontes Vintage/Artísticas do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap');
+
+/* Configurações Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lora', Georgia, serif; /* Fonte do texto estilo livro antigo */
+    scroll-behavior: smooth;
+    
+}
+
+body {
+             /* ATUALIZADO: Fonte global branca */
+    background-color: #eef2f3; /* ATUALIZADO: Fundo cinza-gelo */
+    line-height: 1.7;
+    background-image: radial-gradient(rgba(0,0,0,0.03) 1px, transparent 0); /* Textura sutil de papel antigo */
+    background-size: 24px 24px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 80px 20px;
+}
+
+.bg-light {
+    background-color: #e4e9eb; /* Ajustado para harmonizar com o cinza-gelo */
+    border-top: 1px dashed #cbd5e1;
+    border-bottom: 1px dashed #cbd5e1;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-header h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    font-style: italic;
+    color: #1e293b; /* Títulos das seções em tom escuro para contraste no cinza-gelo */
+    margin-bottom: 10px;
+    position: relative;
+}
+
+/* Menu de Navegação Vintage */
+header {
+    background: rgba(238, 242, 243, 0.95); /* Cor cinza-gelo fluida */
+    backdrop-filter: blur(5px);
+    border-bottom: 2px solid #1e293b; /* Linha divisória sólida clássica */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    font-size: 1.6rem;
+    color: #1e293b;
+    font-style: italic;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #475569;
+    margin-left: 25px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    transition: color 0.2s;
+}
+
+nav ul li a:hover {
+    color: #7c2d12; /* Vermelho terracota vintage no hover */
+    text-decoration: underline;
+}
+
+/* Herói / Blog em Destaque (Estilo Quadro Artístico) */
+.hero-blog {
+    background: #2e3d52; /* Fundo escuro artístico para contrastar o texto branco */
+    padding: 60px 40px;
+    border: 1px solid #1e293b;
+    border-radius: 4px;
+    margin: 40px auto;
+    max-width: 1100px;
+    box-shadow: 8px 8px 0px #1e293b; /* Sombra sólida estilo retrô */
+}
+
+.badge-destaque {
+    background: #7c2d12; /* Terracota */
+    color: #ffffff;
+    padding: 4px 14px;
+    border-radius: 0px; /* Bordas retas vintage */
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.post-principal h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.2rem;
+    line-height: 1.1;
+    color: #ffffff; /* Texto Branco */
+    margin-bottom: 20px;
+}
+
+.post-principal p {
+    font-size: 1.2rem;
+    color: #e2e8f0; /* Texto Branco Suave */
+    max-width: 800px;
+    margin-bottom: 25px;
+}
+
+.btn-primary {
+    display: inline-block;
+    background: transparent;
+    color: white;
+    padding: 10px 22px;
+    border: 2px solid white; /* Botão vazado clássico */
+    border-radius: 0px;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s;
+}
+
+.btn-primary:hover {
+    background: white;
+    color: #2e3d52;
+}
+
+/* Feed Secundário do Blog */
+.blog-grid-secundario {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    border-top: 1px dashed #1e293b;
+    padding-top: 30px;
+}
+
+.post-mini {
+    background: #334155; /* Fundo ardósia escuro */
+    padding: 25px;
+    border: 1px solid #1e293b;
+    box-shadow: 4px 4px 0px #1e293b;
+}
+
+.post-mini h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    margin: 5px 0 10px 0;
+    color: #ffffff; /* Texto Branco */
+}
+
+.post-mini p {
+    color: #cbd5e1;
+}
+
+.read-more {
+    color: #fca5a5; /* Rosa antigo para links */
+    text-decoration: none;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+/* Galeria de Projetos (Estilo Exposição de Arte) */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px;
+}
+
+.project-card {
+    background: #2e3d52; /* Caixa escura para destacar o texto branco */
+    border: 2px solid #1e293b;
+    border-radius: 0px;
+    overflow: hidden;
+    box-shadow: 6px 6px 0px #1e293b;
+}
+
+.project-image img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    filter: sepia(0.3) grayscale(0.1); /* Filtro de foto antiga sutil */
+    border-bottom: 2px solid #1e293b;
+}
+
+.project-info {
+    padding: 25px;
+}
+
+.project-discipline {
+    display: block;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: #94a3b8;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.project-info h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    color: #ffffff; /* Texto Branco */
+    margin-bottom: 10px;
+}
+
+.project-description {
+    color: #e2e8f0; /* Texto Branco Suave */
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+}
+
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.tech-tags span {
+    background: #475569;
+    color: #ffffff;
+    padding: 4px 10px;
+    border-radius: 0px;
+    font-size: 0.75rem;
+    border: 1px solid #64748b;
+}
+
+.btn-secondary {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    border: 1px solid white;
+    color: white; /* Texto Branco */
+    padding: 10px;
+    border-radius: 0px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    transition: background 0.2s;
+}
+
+.btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Linha do Tempo (Currículo Retrô) */
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    background: #1e293b;
+    top: 0;
+    bottom: 0;
+    left: 40px;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+    padding-left: 80px;
+}
+
+.timeline-badge {
+    position: absolute;
+    left: -10px;
+    top: 4px;
+    width: 100px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: #ffffff;
+    background: #7c2d12; /* Distintivo Terracota */
+    padding: 4px 8px;
+    border-radius: 0px;
+    text-align: center;
+}
+
+.timeline-panel {
+    background: #2e3d52; /* Fundo escuro */
+    padding: 25px;
+    border-radius: 0px;
+    border: 1px solid #1e293b;
+    box-shadow: 4px 4px 0px #1e293b;
+}
+
+.timeline-panel h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    color: #ffffff; /* Texto Branco */
+}
+
+.timeline-panel h4 {
+    color: #fca5a5;
+    font-size: 1rem;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.timeline-panel p {
+    color: #e2e8f0;
+}
+
+/* Grade de Habilidades */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.skills-category {
+    background: #2e3d52;
+    padding: 30px;
+    border: 1px solid #1e293b;
+    box-shadow: 4px 4px 0px #1e293b;
+}
+
+.skills-category h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    color: #ffffff; /* Texto Branco */
+    margin-bottom: 15px;
+    border-bottom: 1px dashed #64748b;
+    padding-bottom: 8px;
+}
+
+.skills-list {
+    list-style: none;
+}
+
+.skills-list li {
+    padding: 10px 0;
+    border-bottom: 1px dashed rgba(255,255,255,0.1);
+    color: #e2e8f0;
+    position: relative;
+    padding-left: 20px;
+}
+
+.skills-list li::before {
+    content: '✦'; /* Ícone de estrela vintage */
+    position: absolute;
+    left: 0;
+    color: #fca5a5;
+}
+
+/* Formulário de Contato Vintage */
+form {
+    background: #2e3d52;
+    padding: 40px;
+    border: 1px solid #1e293b;
+    box-shadow: 6px 6px 0px #1e293b;
+    max-width: 600px;
+    margin: 0 auto;
+    color: #ffffff;
+}
+
+form label {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 1.1rem;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 12px;
+    background: #334155;
+    border: 1px solid #1e293b;
+    color: white;
+    font-family: 'Lora', serif;
+    margin-top: 5px;
+}
+
+input:focus, textarea:focus {
+    outline: 1px solid white;
+}
+
+button[type="submit"] {
+    background: #7c2d12;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button[type="submit"]:hover {
+    background: #9a3412;
+}
+
+/* Rodapé Negro Nobre */
+footer {
+    background: #111827;
+    color: #94a3b8;
+    text-align: center;
+    padding: 60px 20px;
+    font-size: 0.9rem;
+    border-top: 2px solid #1e293b;
+}
+
+footer a {
+    color: #fca5a5;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Ajustes finos de tags globais */
+h1, h2, h3, h4 {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .post-principal h1 { font-size: 2.2rem; }
+    nav { flex-direction: column; gap: 15px; }
+    nav ul li a { margin: 0 10px; }
+    .timeline::before { left: 20px; }
+    .timeline-item { padding-left: 50px; }
+    .timeline-badge { width: 80px; font-size: 0.65rem; left: -30px; }
+    form { padding: 20px; }
+}
+html {
+    scroll-behavior: smooth;
+}
