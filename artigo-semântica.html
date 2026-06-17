@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Por que a semântica HTML ainda importa? | Blog</title>
+    <link rel="stylesheet" href="ASSETS/style.css"> 
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">M. Portfólio</div>
+            <ul>
+                <li><a href="index.html">← Voltar para o Início</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container" style="padding: 40px 20px; max-width: 800px; margin: 0 auto;">
+        <article>
+            <time datetime="2026-06-17" style="color: #888;">17 de Junho de 2026</time>
+            <h1 style="font-size: 2.5rem; margin: 20px 0; color: #fca5a5;">Por que a semântica HTML ainda importa?</h1>
+            
+            <p><strong>A base de tudo é um HTML bem construído. Vamos falar sobre SEO e acessibilidade no mundo moderno.</strong></p>
+
+            <p>No desenvolvimento web moderno, somos constantemente bombardeados por novos frameworks JavaScript, bibliotecas de estilização e ferramentas de build que prometem revolucionar a forma como criamos aplicações. No meio de tanta complexidade, a base da web frequentemente acaba negligenciada. É comum abrirmos o inspetor de elementos de um site e nos depararmos com o temido fenômeno da <em>"divite"</em> — uma estrutura composta quase exclusivamente por elementos <code>&lt;div&gt;</code> e <code>&lt;span&gt;</code> sem qualquer significado.</p>
+
+            <p>Mas a verdade é incontestável: <strong>a semântica HTML continua sendo o pilar mais importante de um projeto web de sucesso.</strong> Construir uma fundação sólida usando as tags corretas não é preciosismo técnico; é uma estratégia essencial para garantir que seu conteúdo seja encontrado, compreendido e acessível por qualquer usuário ou máquina.</p>
+
+            <h2 style="margin-top: 30px; color: #fca5a5;">O que é HTML Semântico?</h2>
+            <p>Em termos simples, usar HTML semântico significa escolher tags que descrevem explicitamente o <strong>significado</strong> e o <strong>propósito</strong> do conteúdo que elas envolvem, e não a sua aparência visual.</p>
+            <ul>
+                <li><strong>Não-semântico:</strong> <code>&lt;div class="grande-titulo"&gt;Título do Artigo&lt;/div&gt;</code> (Diz ao navegador apenas que aquilo é um bloco de conteúdo, dependendo totalmente do CSS para fazer sentido).</li>
+                <li><strong>Semântico:</strong> <code>&lt;h1&gt;Título do Artigo&lt;/h1&gt;</code> (Informa instantaneamente ao navegador, leitores de tela e motores de busca que aquele é o título principal da página).</li>
+            </ul>
+            <p>Tags como <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code> e <code>&lt;footer&gt;</code> servem como um mapa estrutural do seu site.</p>
+
+            <h2 style="margin-top: 30px; color: #fca5a5;">O Impacto Direto no SEO (Otimização para Motores de Busca)</h2>
+            <p>Os robôs de indexação do Google, Bing e outros motores de busca são "cegos". Eles não enxergam as cores bonitas do seu CSS ou as animações fluidas do seu JavaScript; eles leem o código-fonte.</p>
+            <p>Quando você utiliza a estrutura correta, você está dando superpoderes ao SEO da sua página:</p>
+            <ul>
+                <li><strong>Priorização de Conteúdo:</strong> Elementos dentro de tags como <code>&lt;main&gt;</code> e <code>&lt;article&gt;</code> indicam aos buscadores onde está o conteúdo principal e mais relevante da página, separando-o de barras laterais ou rodapés.</li>
+                <li><strong>Hierarquia Clara:</strong> O uso correto dos cabeçalhos (<code>&lt;h1&gt;</code> a <code>&lt;h6&gt;</code>) estabelece uma ordem de importância. O Google utiliza essa hierarquia para entender os tópicos e subtópicos abordados no seu texto.</li>
+                <li><strong>Rich Snippets e Fragmentos:</strong> Um HTML bem estruturado facilita a exibição de resultados enriquecidos nas buscas (como receitas, perguntas frequentes ou produtos), aumentando significativamente a taxa de cliques (CTR).</li>
+            </ul>
+
+            <h2 style="margin-top: 30px; color: #fca5a5;">Acessibilidade: Web para Todos</h2>
+            <p>Acessibilidade não é um recurso extra; é uma obrigação. Milhões de pessoas navegam na internet utilizando tecnologias assistivas, como os leitores de tela (softwares que leem o conteúdo da página em voz alta para usuários com deficiência visual).</p>
+            <p>Para quem usa um leitor de tela, uma página feita apenas com <code>&lt;div&gt;</code> é um deserto de contexto. O usuário é obrigado a ouvir o conteúdo de forma linear, sem conseguir saltar para as partes importantes.</p>
+            <p>O HTML semântico cria pontos de referência naturais (Landmarks). Com as tags corretas, o usuário de um leitor de tela pode pular direto para o menu de navegação, ir para o conteúdo principal ignorando o topo, ou entender que um elemento realiza uma ação porque foi usado um <code>&lt;button&gt;</code> adequado.</p>
+
+            <h2 style="margin-top: 30px; color: #fca5a5;">Conclusão: Volte ao Básico para Avançar</h2>
+            <p>Subestimar o HTML é um dos maiores erros do desenvolvimento web atual. Frameworks modernos vêm e vão, mas o HTML permanece como a linguagem universal da internet.</p>
+            <p>Se você quer que seu site moderno seja verdadeiramente profissional, comece de baixo. Invista tempo desenhando uma arquitetura de tags limpa, consciente e semântica. Seu posicionamento no Google vai agradecer, sua equipe vai trabalhar melhor e, acima de tudo, você garantirá que a web continue sendo um espaço democrático e acessível para todos.</p>
+        </article>
+        
+        <div style="margin-top: 50px;">
+            <a href="index.html" style="background: #fca5a5; color: #000; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">← Voltar para o Início</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Crônica Digital por Millena Cardoso</p>
+    </footer>
+
+</body>
+</html>
+
+```
