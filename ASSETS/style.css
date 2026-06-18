@@ -8,11 +8,9 @@
     box-sizing: border-box;
     font-family: 'Lora', Georgia, serif; /* Fonte do texto estilo livro antigo */
     scroll-behavior: smooth;
-    
 }
 
 body {
-             /* ATUALIZADO: Fonte global branca */
     background-color: #eef2f3; /* ATUALIZADO: Fundo cinza-gelo */
     line-height: 1.7;
     background-image: radial-gradient(rgba(0,0,0,0.03) 1px, transparent 0); /* Textura sutil de papel antigo */
@@ -318,6 +316,22 @@ nav ul li a:hover {
     border-radius: 0px;
     border: 1px solid #1e293b;
     box-shadow: 4px 4px 0px #1e293b;
+    
+    /* ATUALIZADO: Removemos o flex do painel para o float do HTML agir corretamente */
+    display: block; 
+}
+
+/* ATUALIZADO: Configuração para manter a proporção correta e o contorno da foto circular */
+.timeline-img {
+    max-width: 90px;      /* Define um tamanho máximo proporcional para o círculo */
+    aspect-ratio: 1 / 1;  /* Garante que ela se mantenha perfeitamente quadrada antes do círculo */
+    object-fit: cover;    /* Corta o arquivo original sem distorcer as proporções */
+    border: 2px solid #ffffff; /* Adiciona uma borda branca sutil idêntica à do exemplo */
+}
+
+/* ATUALIZADO: Garante que o container interno limpe o fluxo flutuante */
+.timeline-content {
+    display: block;
 }
 
 .timeline-panel h3 {
@@ -462,6 +476,12 @@ h1, h2, h3, h4 {
     .timeline-item { padding-left: 50px; }
     .timeline-badge { width: 80px; font-size: 0.65rem; left: -30px; }
     form { padding: 20px; }
+    
+    /* Em telas pequenas, centraliza um pouco mais as fotos flutuantes */
+    .timeline-img {
+        max-width: 70px;
+        margin-right: 10px !important;
+    }
 }
 html {
     scroll-behavior: smooth;
