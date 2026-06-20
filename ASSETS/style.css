@@ -316,12 +316,9 @@ nav ul li a:hover {
     border-radius: 0px;
     border: 1px solid #1e293b;
     box-shadow: 4px 4px 0px #1e293b;
-    
-    /* ATUALIZADO: Removemos o flex do painel para o float do HTML agir corretamente */
     display: block; 
 }
 
-/* ATUALIZADO: Configuração para manter a proporção correta e o contorno da foto circular */
 .timeline-img {
     max-width: 90px;      /* Define um tamanho máximo proporcional para o círculo */
     aspect-ratio: 1 / 1;  /* Garante que ela se mantenha perfeitamente quadrada antes do círculo */
@@ -329,7 +326,6 @@ nav ul li a:hover {
     border: 2px solid #ffffff; /* Adiciona uma borda branca sutil idêntica à do exemplo */
 }
 
-/* ATUALIZADO: Garante que o container interno limpe o fluxo flutuante */
 .timeline-content {
     display: block;
 }
@@ -442,6 +438,77 @@ button[type="submit"]:hover {
     background: #9a3412;
 }
 
+/* NOVO: Customização da Seção de Especificações de Hardware (Estilo Editorial Retro) */
+.hardware-table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin: 40px auto 0 auto;
+    max-width: 800px;
+    border: 1px solid #1e293b;
+    box-shadow: 6px 6px 0px #1e293b; /* Sombra sólida idêntica aos blocos do portfólio */
+}
+
+.hardware-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    background: #2e3d52; /* Fundo azul-escuro igual aos painéis */
+    color: #ffffff;
+}
+
+.hardware-table th, .hardware-table td {
+    padding: 16px 20px;
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.15); /* Divisória tracejada vintage */
+}
+
+.hardware-table th {
+    background-color: #1e293b; /* Cabeçalho mais escuro e sóbrio */
+    color: #ffffff;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    font-style: italic;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid #1e293b;
+}
+
+.hardware-table td strong {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.hardware-table tr:nth-child(even) {
+    background-color: #334155; /* Alternância sutil com tom ardósia */
+}
+
+.hardware-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* Distintivos de Estado Mínimo/Pleno dentro da Tabela */
+.status-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 0px; /* Bordas retas tradicionais */
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.status-minimo {
+    background-color: #7c2d12; /* Vermelho Terracota */
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.status-pleno {
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #ffffff; /* Estilo outline clássico */
+}
+
 /* Rodapé Negro Nobre */
 footer {
     background: #111827;
@@ -477,12 +544,13 @@ h1, h2, h3, h4 {
     .timeline-badge { width: 80px; font-size: 0.65rem; left: -30px; }
     form { padding: 20px; }
     
-    /* Em telas pequenas, centraliza um pouco mais as fotos flutuantes */
     .timeline-img {
         max-width: 70px;
         margin-right: 10px !important;
     }
-}
-html {
-    scroll-behavior: smooth;
+
+    .hardware-table th, .hardware-table td {
+        padding: 12px 14px;
+        font-size: 0.9rem;
+    }
 }
